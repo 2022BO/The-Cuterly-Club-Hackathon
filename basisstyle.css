@@ -1,0 +1,124 @@
+.header {
+    grid-area: h;
+    background-color: rgb(9, 9, 60);
+    height: 50%;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: "Baumans";
+    font-size: large;
+    border: 3px goldenrod solid;
+    border-radius: 10px;
+
+}
+
+.menu {
+    display: grid;
+    grid-area: m;
+    background-color: lightblue;
+    height: 100%;
+    color: darkgoldenrod;
+    justify-content: space-around;
+    background-color: rgb(9, 9, 60);
+    padding: 3%;
+    font-size: medium;
+    border-radius: 10px;
+    border: 3px goldenrod solid;
+    width: fit-content;
+
+
+
+}
+
+button {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 2px goldenrod solid;
+    gap: 5%;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5% 1%;
+    padding: 10%;
+}
+
+.images {
+    display: grid;
+    grid: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10%;
+
+}
+
+.left {
+    display: grid;
+    margin: 1%;
+    padding: 5%;
+
+
+}
+
+.middle {
+    display: grid;
+    margin: 1%;
+    padding: 5%;
+
+}
+
+.right {
+    display: grid;
+    margin: 1%;
+    padding: 5%;
+
+}
+
+.video {
+    margin: 0.5%;
+    object-fit: cover;
+    margin: 1%;
+    padding: 6%;
+
+
+}
+
+.content {
+    background-color: skyblue;
+    border: 4px solid goldenrod;
+    border-radius: 10px;
+}
+
+.text1,
+.text2 {
+    background-color: skyblue;
+    border: 4px solid goldenrod;
+    border-radius: 10px;
+
+}
+
+h4 {
+    color: floralwhite;
+    font-style: italic;
+    text-shadow: 4px 4px 4px rgb(9, 9, 60);
+
+}
+
+.footer {
+    background-color: rgba(9, 9, 60, 0.22);
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+a:active {
+    color: azure;
+}

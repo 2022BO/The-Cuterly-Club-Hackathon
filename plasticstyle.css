@@ -1,0 +1,134 @@
+html {
+    background-color: lightblue;
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    font-family: "Baumans";
+
+}
+
+.wrapper_container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr (100px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr (100px, 1fr));
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "g g g g g g g g g g g m"
+        "e e e e e e e t t t t m"
+        "c c c c c c c t t t t m"
+        "f f f f f f f f f f f f";
+    gap: 1.5rem;
+    font-size: 20px;
+    align-items: center;
+    margin: 2%;
+}
+
+
+p,
+a,
+h2,
+h3,
+h4,
+form {
+    margin: 2%;
+}
+
+.login {
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 33.3%;
+
+}
+
+.logout {
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 33.3%;
+
+}
+
+.header {
+    grid-area: h;
+    height: 50%;
+    text-align: center;
+    padding: 30px 10px;
+    margin: 0%;
+    font-size: large;
+}
+
+.menu {
+    display: flex;
+    grid-area: m;
+    height: 100%;
+    gap: 1.5rem;
+    margin: 2%;
+
+
+}
+
+.container_form {
+    font-size: 100%;
+    line-height: 2.3em;
+    padding: 10%;
+    margin: 0%;
+    background-color: skyblue;
+}
+
+.container_logo {
+    padding: 10%;
+    margin: 0%;
+
+}
+
+.images {
+    grid-area: g;
+
+}
+
+.video {
+    grid-area: g;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    max-width: 100%;
+}
+
+.content {
+    grid-area: c;
+
+}
+
+.text1 {
+    grid-area: e;
+}
+
+.text2 {
+    grid-area: t;
+}
+
+.container_form {
+    grid-area: a;
+}
+
+.footer {
+    grid-area: f;
+
+}
+
+
+@media screen and (min-width: 320px) {
+
+    .body .header .video .content .images {
+        width: 92%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .body .header .video .content {
+        width: 46%;
+        margin: 0 auto;
+    }
+}
